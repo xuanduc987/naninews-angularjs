@@ -1,0 +1,52 @@
+:root {
+  --brand-color: #4D606E;
+  --accent-color: #3FBAC2;
+  --bg-color: #F5F5F5;
+  --gray-color: #D3D4D8;
+}
+
+body {
+  line-height: 1.7em;
+  font-size: 14px;
+  background: var(--bg-color);
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.right-side {
+  float: right;
+}
+
+#nav-menu {
+  background: var(--brand-color);
+  padding: 0.5em;
+}
+
+#nav-menu .pure-menu-heading {
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+}
+
+#nav-menu .pure-menu-item {
+}
+
+#nav-menu .pure-menu-link {
+  color: white;
+}
+
+#nav-menu .pure-menu-link:hover,
+#nav-menu .pure-menu-link:focus {
+  background: none;
+  color: var(--accent-color);
+}
+
+
+@media (min-width: 48em) {
+  body {
+    font-size: 16px;
+  }
+}

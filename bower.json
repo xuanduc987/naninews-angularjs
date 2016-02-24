@@ -1,0 +1,24 @@
+{
+  "name": "naninews-angular",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Duc Nghiem Xuan"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0",
+    "pure": "~0.6.0",
+    "angular-route": "~1.5.0"
+  }
+}
