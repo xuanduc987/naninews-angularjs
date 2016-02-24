@@ -1,13 +1,15 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('app.home')
-    .controller('HomeController', HomeController);
+    angular
+        .module('app.home')
+        .controller('HomeController', HomeController);
 
-  HomeController.$inject = [];
+    HomeController.$inject = [];
 
-  function HomeController() {
-    var vm = this;
-  }
+    function HomeController() {
+        var vm = this;
+
+        vm.message = 'Hello World!';
+    }
 }());

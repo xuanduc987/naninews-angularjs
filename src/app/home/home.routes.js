@@ -15,5 +15,5 @@
                 controllerAs: 'vm',
                 title: 'home'
             });
-    };
+    }
 }());

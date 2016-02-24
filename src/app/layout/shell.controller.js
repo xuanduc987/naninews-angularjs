@@ -5,9 +5,9 @@
         .module('app.layout')
         .controller('ShellController', ShellController);
 
-    ShellController.$inject = ['config', '$route'];
+    ShellController.$inject = ['$route', 'config'];
 
-    function ShellController(config, $route) {
+    function ShellController($route, config) {
         var vm = this;
 
         vm.title = config.appTitle;

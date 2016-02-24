@@ -3,18 +3,7 @@
 
     angular
         .module('app')
-        .config(appConfig)
-        .run(appRun);
-
-    appRun.$inject = ['$route', '$rootScope'];
-
-    function appRun($route, $rootScope) {
-        $rootScope.$on('$routeChangeSuccess',
-            function(event, current, previous) {
-                $rootScope.title = current.title;
-            }
-        );
-    };
+        .config(appConfig);
 
     appConfig.$inject = ['$routeProvider'];
 

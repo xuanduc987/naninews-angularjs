@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var mainBowerFiles = require('main-bower-files');
-var concat = require('gulp-concat')
+var concat = require('gulp-concat');
 var gulpFilter = require('gulp-filter');
 var del = require('del');
 var runSequence = require('run-sequence');
@@ -10,7 +10,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 gulp.task('bower', function() {
-    var jsFilter = gulpFilter('**/*.js', { restore: true })
+    var jsFilter = gulpFilter('**/*.js', { restore: true });
     return gulp.src(mainBowerFiles())
     .pipe(jsFilter)
     .pipe(concat('lib.js'))
@@ -35,7 +35,7 @@ gulp.task('build:html', function() {
 gulp.task('build:js', function() {
     return gulp.src([
         'src/app/**/*.module.js',
-        'src/app/**/!(*.module).js',
+        'src/app/**/!(*.module).js'
     ])
     .pipe(concat('app.js'))
     .pipe(gulp.dest('build/js/'))

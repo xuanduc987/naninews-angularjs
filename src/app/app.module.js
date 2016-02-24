@@ -5,6 +5,6 @@
         .module('app', [
             'app.core',
             'app.home',
-            'app.layout',
-        ])
+            'app.layout'
+        ]);
 }());
